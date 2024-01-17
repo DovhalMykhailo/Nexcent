@@ -13,15 +13,14 @@
     --Neutral-Grey: #717171;
   }
 .page {
-    width: 1440px;
-    /* overflow: hidden; UNCOMMENT */
+    min-width: 1440px;
+    /* overflow: hidden; UNCOMMENT  */
     background: #FFF;    
     font-family: 'Inter', sans-serif;
     font-size: 14px;
 }
 
 .header {
-    width: 1440px;
     padding-top: 22px;
     padding-bottom: 22px;
     padding-left: 105px;
@@ -101,7 +100,7 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    column-gap: 104px;
+    justify-content: space-between;
 }
 
 .hero-content {
