@@ -15,6 +15,11 @@
     --Neutral-White: #FFF;
   }
 
+:root { /*fordevelopment*/
+    --section: red;
+    --inprogress: yellow;
+    --finished: green;
+}
   .visually-hidden{
     position: absolute;
     width: 1px;
@@ -97,7 +102,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px;
 }
 
 .hero {
@@ -158,7 +163,6 @@
     list-style-type: none;
     display: flex;
     column-gap: 8px;
-    /* background-color: red; */
     width: 46px;
     height: 10px;
     padding-bottom: 26px;
@@ -282,13 +286,11 @@
 
 .main {
     width: 100%;
-    height: 2000px; /*DELETEME*/
     gap: 48px; 
 
 }
 .main-unlock {
     width: 100%;
-    height: 433px; /*DELETEME*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -324,7 +326,7 @@
 }
 
 .main-unlock-content__button {
-    width: 151px ;
+    width: 151px;
     height: 52px;
     border: none;
     border-radius: 4px;
@@ -335,3 +337,70 @@
     line-height: 24px;
 }
 
+.main-achievements {
+    display: flex;
+    padding: 64px 144px;
+    justify-content: space-between;
+    background-color: var(--grey-background-color);
+
+}
+
+.main-achievements-header {
+    width: 38%;
+}
+
+.main-achievements-header__title {
+    color: var(--Neutral-D_Grey);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px; 
+}
+
+.main-achievements-header__title_color-green {
+    color: var(--green-color) ;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+}
+
+.main-achievements-header__description {
+    color: var(--text-gray-color);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.main-achievements-counts {
+    display: grid; 
+    grid-template-rows: 60px 60px ;
+    grid-template-columns: 255px 255px;
+    column-gap: 30px;
+    row-gap: 40px;
+}
+
+.main-achievements-counts-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-achievements-counts-item__image {
+    color: var(--green-color);
+}
+
+.main-achievements-counts-item-text {
+    padding-left: 16px;
+}
+
+.main-achievements-counts-item-text__number {
+    color: var(--Neutral-D_Grey);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px; 
+}
+
+.main-achievements-counts-item-text__label {
+    color: var(--Neutral-D_Grey);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
